@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="faviconnn.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Coffee Shop</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #e8b18b67;
+        }
+        .hero-brand{
+            font-size: 26px;
+        }
+        .theConatainer{
+            filter: opacity(1);
+            margin: 0 auto;
+            display: block;
+            padding: 4rem;
+            background-image: url("backgroung-image1jpg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .bg-prposed{
+            background-color: rgb(60, 20, 7);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #2e1603 , #ffb39c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        .btn-color{
+            color: #2e1603;
+            background-color: #F5DFD0;
+        }
+        .btn-color:hover{
+            color: #fff;
+            background-color: #2e1603;
+        }
+        @media (max-width: 768px) {
+            .theConatainer {
+                width: 90% !important;
+                padding: 2rem !important; 
+            }
+            .info-heading,
+            .gradient-text {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .btn-color {
+                width: 100%;
+                font-size: 1.25rem;
+            }
+            .my-5 {
+                margin-top: 1.5rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header class="p-2 bg-prposed">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid text-light">
+            <a class="navbar-brand hero-brand fw-bold" href="#"><i class="fa-solid fa-mug-hot m-2"></i>Coffee Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="#">Mino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="my-5"></div>
+<br>
+<div class="container theConatainer my-5 rounded w-50">
+   <div class="info">
+    <h1 class="text-center fw-bold info-heading gradient-text">Welcome to Coffee Shop!</h1>
+   </div>
+   <div class="my-5"></div>
+   <div class="my-5"></div>
+   <div class="my-5"></div>
+   <div class="my-5"></div>
+   <br>
+   <div>
+    <h3 class="text-center fw-bold gradient-text">Your daily escape in every cup.</h3>
+   </div>
+   <div class="my-5"></div>
+   <div class="my-5"></div>
+   <div class="my-5"></div>
+   <div class="my-5"></div>
+   <div class="d-flex justify-content-center">
+        <button class="btn btn-color p-3 fs-4" id="start-btn">Start Ordering</button>  
+    </div>
+    <script src="myScript.js"></script>
+</div>
+</body>
+</html>
